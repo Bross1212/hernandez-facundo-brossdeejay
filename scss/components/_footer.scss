@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+.copy {
+    color: white;
+}
+
+footer {
+    list-style-type: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    background-color: black;
+    padding: 10px;
+    font-size: 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    bottom: 0;
+}
+
+.footer__logo {
+    display: flex;
+    padding: 5px;
+}

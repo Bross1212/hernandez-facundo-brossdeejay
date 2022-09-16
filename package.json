@@ -1,0 +1,23 @@
+{
+  "name": "brossdeejay-hernandez-facundo-sass-i",
+  "version": "1.0.0",
+  "description": "Usando Sass",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bross1212/hernandez-facundo-brossdeejay.git"
+  },
+  "author": "Facundo Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bross1212/hernandez-facundo-brossdeejay/issues"
+  },
+  "homepage": "https://github.com/Bross1212/hernandez-facundo-brossdeejay#readme",
+  "devDependencies": {
+    "build-sass": "^1.0.1",
+    "node-sass": "^7.0.3"
+  }
+}

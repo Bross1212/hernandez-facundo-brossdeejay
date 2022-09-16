@@ -1,0 +1,52 @@
+/* CONTENEDOR - INDEX */
+.contenedor {
+	width: 100%;
+    min-height: 100vh;
+	max-width: 2000px;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, auto);
+
+	grid-template-areas: "header header header header header"
+						 ". . contenido . ."
+						 ". spotify spotify spotify ."
+						 "footer footer footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header {
+	background-color: black;
+    color: white;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.contenedor .header {
+	background-color: black;
+	color: #fff;
+	grid-area: header;
+}
+
+.contenedor .contenido {
+	grid-area: contenido;
+}
+
+.contenedor .spotify {
+	grid-column: 3;
+	grid-area: spotify;
+}
+
+.contenedor .footer {
+	background-color: black;
+	color: white;
+	grid-area: footer;
+    align-self: flex-end;
+    font-size: 10px;
+    text-align: center;
+	align-items: center;
+	justify-content: center;
+	min-height: 10px;
+    list-style-type: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}

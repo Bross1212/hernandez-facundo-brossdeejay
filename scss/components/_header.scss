@@ -1,0 +1,29 @@
+
+
+.menu {
+    list-style-type: none;
+    font-family: 'Staatliches', cursive;
+    background-color: black;
+    padding: 20px ;
+}
+
+.menu li  {
+    display: inline;
+    margin-right: 10px;
+}
+.menu li a {
+    color: #ffffff;
+    text-decoration: none  ;
+}
+header {
+    display: flex;
+    height: 30px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    padding: 5px;
+}

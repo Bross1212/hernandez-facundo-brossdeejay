@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: url(/assets/fondo1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+p {
+  line-height: 1.5; }
+
+ul {
+  list-style-type: none; }
+
+.menu {
+  list-style-type: none;
+  font-family: 'Staatliches', cursive;
+  background-color: black;
+  padding: 20px; }
+
+.menu li {
+  display: inline;
+  margin-right: 10px; }
+
+.menu li a {
+  color: #ffffff;
+  text-decoration: none; }
+
+header {
+  display: flex;
+  height: 30px;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  display: flex;
+  padding: 5px; }
+
+/* CONTENEDOR - INDEX */
+.contenedor {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 2000px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header header header header header" ". . contenido . ." ". spotify spotify spotify ." "footer footer footer footer footer"; }
+
+.contenedor > div,
+.contenedor .header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 4px; }
+
+.contenedor .header {
+  background-color: black;
+  color: #fff;
+  grid-area: header; }
+
+.contenedor .contenido {
+  grid-area: contenido; }
+
+.contenedor .spotify {
+  grid-column: 3;
+  grid-area: spotify; }
+
+.contenedor .footer {
+  background-color: black;
+  color: white;
+  grid-area: footer;
+  align-self: flex-end;
+  font-size: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 10px;
+  list-style-type: none;
+  font-family: 'Ubuntu Condensed', sans-serif; }
+
+.copy {
+  color: white; }
+
+footer {
+  list-style-type: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  background-color: black;
+  padding: 10px;
+  font-size: 10px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  bottom: 0; }
+
+.footer__logo {
+  display: flex;
+  padding: 5px; }
