@@ -1,0 +1,66 @@
+/* CONTENEDOR 3 - SERVICIOS */
+
+.contenedor3 {
+    display: grid;
+    text-shadow: 2px 2px black;
+    width: 100%;
+    height: 100%;
+	max-width: 2000px;
+	grid-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 50px 400px 100px;
+    grid-template-areas:
+    "header header header header"
+    ". contenido3 contenido3 ."
+    "service service service1 service1"
+    "footer footer footer footer";
+}
+.contenedor3 > div,
+.contenedor3 .header {
+	background-color: black;
+	color: #fff;
+	grid-area: header;
+	border-radius: 4px;
+    padding: 20px;
+}
+
+.contenido3 {
+    grid-area: contenido3;
+    color: white;
+    justify-self: center;
+    align-self: center;
+}
+.service {
+    grid-area: service;
+    justify-self: center;
+    align-self: center;
+}
+.service1 {
+    grid-area: service1;
+    color: white;
+    padding: 25px;
+    justify-self: center;
+    padding-top: 50px;
+}
+
+.contenedor3 .header {
+    background-color: black;
+	color: #fff;
+	grid-area: header;
+	border-radius: 4px;
+    padding: 20px;
+}
+
+.contenedor3 .footer {
+    background-color: black;
+	color: white;
+	grid-area: footer;
+    align-self: flex-end;
+    font-size: 10px;
+    text-align: center;
+	align-items: center;
+	justify-content: center;
+	min-height: 10px;
+    list-style-type: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}

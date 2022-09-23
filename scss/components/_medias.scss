@@ -1,0 +1,126 @@
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px){
+    .header {
+        height: auto;
+        align-items: stretch;
+    }
+	.contenedor2 {
+        grid-template-columns: repeat(5, 1fr);
+		grid-template-areas: "header header header header header"
+						 ". . contenido2 . ."
+						 "footer footer footer footer footer ";
+	}
+}
+@media screen and (max-width: 1200px){
+    .header {
+        height: auto;
+        align-items: stretch;
+    }
+    .service {
+        align-self: center;
+        justify-self: center;
+        padding: 20px;
+    }
+    .service1 {
+        padding: 20px;
+        align-self: center;
+        justify-items: center;
+    }
+	.contenedor3 {
+        grid-template-rows: auto auto 300px auto;
+		grid-template-areas: "header header header header"
+						 "contenido3 contenido3 contenido3 contenido3"
+                         "service service service service"
+                         "service1 service1 service1 service1"
+						 "footer footer footer footer ";
+	}
+}
+@media screen and (max-width: 1200px){
+    .header {
+        height: auto;
+        align-items: stretch;
+    }
+    .clase {
+         align-self: center;
+         justify-self: center;
+    }
+    .clase3 {
+        align-self: center;
+        justify-self: center;
+    }
+    .clase2 {
+        padding: 20px;
+        align-self: center;
+        justify-items: center;
+    }
+	.contenedor4 {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, auto);
+		grid-template-areas:
+        "header header"
+        "contenido4 contenido4"
+        "clase clase"
+        "clase3 clase3"
+        "clase2 clase2"
+        "footer footer";
+	}
+}
+ @media screen and (max-width: 1200px){ 
+    .header {
+        height: auto;
+        align-items: stretch;
+    }
+	.contenedor5 {
+        grid-template-columns: repeat(5, 1fr);
+		grid-template-areas:
+        "header header header header header "
+        "contenido5 contenido5 contenido5 contenido5 contenido5"
+        ". caja1 caja2 caja3 ."
+        ". caja4 caja5 caja6 ."
+        ". caja7 caja8 caja9 ."
+        "footer footer footer footer footer";
+	}
+} 
+
+@media screen and (max-width: 809px){ 
+    .header {
+        height: auto;
+        align-items: stretch;
+    }
+	.contenedor5 {
+        grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+        "header header "
+        "contenido5 contenido5"
+        "caja1 caja2 "
+        "caja3 caja4 "
+        "caja5 caja6 "
+        "caja7 caja8 "
+        "caja9 ."
+        "footer footer";
+	}
+} 
+
+@media screen and (max-width: 420px) {
+    .header {
+        height: auto;
+        align-items: stretch;
+    }
+	.contenedor5 {
+        grid-template-columns: repeat(1, 1fr);
+		grid-template-areas:
+        "header"
+        "contenido5 "
+        "caja1" 
+        "caja2"
+        "caja3"  
+        "caja4"
+        "caja5" 
+        "caja6"
+        "caja7"
+        "caja8"
+        "caja9"
+        "footer";
+	}
+} 
